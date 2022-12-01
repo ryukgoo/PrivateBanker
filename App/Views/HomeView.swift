@@ -13,6 +13,8 @@ struct HomeView: View {
             VStack(alignment: .leading) {
                 Text("Welcome back!!")
                     .font(.title2)
+                Text("gg")
+                    .font(.title)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.vertical)

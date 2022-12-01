@@ -17,7 +17,6 @@
 		36D2768F2938405900064AF0 /* PrivateBankerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */; };
 		36D276912938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */; };
 		36EFD8A129384BD500044CC4 /* EditGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A029384BD500044CC4 /* EditGame.swift */; };
-		36EFD8A329384DB100044CC4 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A229384DB100044CC4 /* GameModel.swift */; };
 		36EFD8A5293860F000044CC4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A4293860F000044CC4 /* HomeView.swift */; };
 		36EFD8AA293863D000044CC4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 36EFD8A9293863D000044CC4 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
@@ -55,7 +54,6 @@
 		36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITests.swift; sourceTree = "<group>"; };
 		36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		36EFD8A029384BD500044CC4 /* EditGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGame.swift; sourceTree = "<group>"; };
-		36EFD8A229384DB100044CC4 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		36EFD8A4293860F000044CC4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		36EFD8A9293863D000044CC4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,7 +149,6 @@
 		36D2769D2938414700064AF0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				36EFD8A229384DB100044CC4 /* GameModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,7 +323,6 @@
 				36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */,
 				36D276752938405000064AF0 /* ContentView.swift in Sources */,
 				36D276702938405000064AF0 /* Persistence.swift in Sources */,
-				36EFD8A329384DB100044CC4 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
