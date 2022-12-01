@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36D2766E2938405000064AF0 /* PrivateBankerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2766D2938405000064AF0 /* PrivateBankerApp.swift */; };
+		36D276702938405000064AF0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2766F2938405000064AF0 /* Persistence.swift */; };
+		36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */; };
+		36D276752938405000064AF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276742938405000064AF0 /* ContentView.swift */; };
+		36D276772938405800064AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D276762938405800064AF0 /* Assets.xcassets */; };
+		36D2767B2938405800064AF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D2767A2938405800064AF0 /* Preview Assets.xcassets */; };
+		36D276852938405900064AF0 /* PrivateBankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276842938405900064AF0 /* PrivateBankerTests.swift */; };
+		36D2768F2938405900064AF0 /* PrivateBankerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */; };
+		36D276912938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36D276812938405900064AF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D276622938405000064AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36D276692938405000064AF0;
+			remoteInfo = PrivateBanker;
+		};
+		36D2768B2938405900064AF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36D276622938405000064AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 36D276692938405000064AF0;
+			remoteInfo = PrivateBanker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36D2766A2938405000064AF0 /* PrivateBanker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateBanker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D2766D2938405000064AF0 /* PrivateBankerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerApp.swift; sourceTree = "<group>"; };
+		36D2766F2938405000064AF0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		36D276722938405000064AF0 /* PrivateBanker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrivateBanker.xcdatamodel; sourceTree = "<group>"; };
+		36D276742938405000064AF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		36D276762938405800064AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36D276782938405800064AF0 /* PrivateBanker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrivateBanker.entitlements; sourceTree = "<group>"; };
+		36D2767A2938405800064AF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36D276802938405900064AF0 /* PrivateBankerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateBankerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D276842938405900064AF0 /* PrivateBankerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerTests.swift; sourceTree = "<group>"; };
+		36D2768A2938405900064AF0 /* PrivateBankerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateBankerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITests.swift; sourceTree = "<group>"; };
+		36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36D276672938405000064AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D2767D2938405900064AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D276872938405900064AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36D276612938405000064AF0 = {
+			isa = PBXGroup;
+			children = (
+				36D2766C2938405000064AF0 /* PrivateBanker */,
+				36D276832938405900064AF0 /* PrivateBankerTests */,
+				36D2768D2938405900064AF0 /* PrivateBankerUITests */,
+				36D2766B2938405000064AF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36D2766B2938405000064AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36D2766A2938405000064AF0 /* PrivateBanker.app */,
+				36D276802938405900064AF0 /* PrivateBankerTests.xctest */,
+				36D2768A2938405900064AF0 /* PrivateBankerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36D2766C2938405000064AF0 /* PrivateBanker */ = {
+			isa = PBXGroup;
+			children = (
+				36D2766D2938405000064AF0 /* PrivateBankerApp.swift */,
+				36D2766F2938405000064AF0 /* Persistence.swift */,
+				36D276742938405000064AF0 /* ContentView.swift */,
+				36D276762938405800064AF0 /* Assets.xcassets */,
+				36D276782938405800064AF0 /* PrivateBanker.entitlements */,
+				36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */,
+				36D276792938405800064AF0 /* Preview Content */,
+			);
+			path = PrivateBanker;
+			sourceTree = "<group>";
+		};
+		36D276792938405800064AF0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				36D2767A2938405800064AF0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		36D276832938405900064AF0 /* PrivateBankerTests */ = {
+			isa = PBXGroup;
+			children = (
+				36D276842938405900064AF0 /* PrivateBankerTests.swift */,
+			);
+			path = PrivateBankerTests;
+			sourceTree = "<group>";
+		};
+		36D2768D2938405900064AF0 /* PrivateBankerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */,
+				36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */,
+			);
+			path = PrivateBankerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36D276692938405000064AF0 /* PrivateBanker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D276942938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBanker" */;
+			buildPhases = (
+				36D276662938405000064AF0 /* Sources */,
+				36D276672938405000064AF0 /* Frameworks */,
+				36D276682938405000064AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrivateBanker;
+			productName = PrivateBanker;
+			productReference = 36D2766A2938405000064AF0 /* PrivateBanker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		36D2767F2938405900064AF0 /* PrivateBankerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D276972938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBankerTests" */;
+			buildPhases = (
+				36D2767C2938405900064AF0 /* Sources */,
+				36D2767D2938405900064AF0 /* Frameworks */,
+				36D2767E2938405900064AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36D276822938405900064AF0 /* PBXTargetDependency */,
+			);
+			name = PrivateBankerTests;
+			productName = PrivateBankerTests;
+			productReference = 36D276802938405900064AF0 /* PrivateBankerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		36D276892938405900064AF0 /* PrivateBankerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36D2769A2938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBankerUITests" */;
+			buildPhases = (
+				36D276862938405900064AF0 /* Sources */,
+				36D276872938405900064AF0 /* Frameworks */,
+				36D276882938405900064AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36D2768C2938405900064AF0 /* PBXTargetDependency */,
+			);
+			name = PrivateBankerUITests;
+			productName = PrivateBankerUITests;
+			productReference = 36D2768A2938405900064AF0 /* PrivateBankerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36D276622938405000064AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					36D276692938405000064AF0 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					36D2767F2938405900064AF0 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 36D276692938405000064AF0;
+					};
+					36D276892938405900064AF0 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 36D276692938405000064AF0;
+					};
+				};
+			};
+			buildConfigurationList = 36D276652938405000064AF0 /* Build configuration list for PBXProject "PrivateBanker" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36D276612938405000064AF0;
+			productRefGroup = 36D2766B2938405000064AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36D276692938405000064AF0 /* PrivateBanker */,
+				36D2767F2938405900064AF0 /* PrivateBankerTests */,
+				36D276892938405900064AF0 /* PrivateBankerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36D276682938405000064AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D2767B2938405800064AF0 /* Preview Assets.xcassets in Resources */,
+				36D276772938405800064AF0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D2767E2938405900064AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D276882938405900064AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36D276662938405000064AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D2766E2938405000064AF0 /* PrivateBankerApp.swift in Sources */,
+				36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */,
+				36D276752938405000064AF0 /* ContentView.swift in Sources */,
+				36D276702938405000064AF0 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D2767C2938405900064AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D276852938405900064AF0 /* PrivateBankerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36D276862938405900064AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D2768F2938405900064AF0 /* PrivateBankerUITests.swift in Sources */,
+				36D276912938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36D276822938405900064AF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36D276692938405000064AF0 /* PrivateBanker */;
+			targetProxy = 36D276812938405900064AF0 /* PBXContainerItemProxy */;
+		};
+		36D2768C2938405900064AF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 36D276692938405000064AF0 /* PrivateBanker */;
+			targetProxy = 36D2768B2938405900064AF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36D276922938405900064AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36D276932938405900064AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		36D276952938405900064AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrivateBanker/PrivateBanker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrivateBanker/Preview Content\"";
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBanker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36D276962938405900064AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrivateBanker/PrivateBanker.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrivateBanker/Preview Content\"";
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBanker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		36D276982938405900064AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBankerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivateBanker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrivateBanker";
+			};
+			name = Debug;
+		};
+		36D276992938405900064AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBankerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrivateBanker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PrivateBanker";
+			};
+			name = Release;
+		};
+		36D2769B2938405900064AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBankerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrivateBanker;
+			};
+			name = Debug;
+		};
+		36D2769C2938405900064AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A6V68BVP7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flopset.PrivateBankerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrivateBanker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36D276652938405000064AF0 /* Build configuration list for PBXProject "PrivateBanker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D276922938405900064AF0 /* Debug */,
+				36D276932938405900064AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D276942938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBanker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D276952938405900064AF0 /* Debug */,
+				36D276962938405900064AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D276972938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBankerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D276982938405900064AF0 /* Debug */,
+				36D276992938405900064AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36D2769A2938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBankerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36D2769B2938405900064AF0 /* Debug */,
+				36D2769C2938405900064AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				36D276722938405000064AF0 /* PrivateBanker.xcdatamodel */,
+			);
+			currentVersion = 36D276722938405000064AF0 /* PrivateBanker.xcdatamodel */;
+			path = PrivateBanker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 36D276622938405000064AF0 /* Project object */;
+}
