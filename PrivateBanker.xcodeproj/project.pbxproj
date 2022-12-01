@@ -16,6 +16,10 @@
 		36D276852938405900064AF0 /* PrivateBankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276842938405900064AF0 /* PrivateBankerTests.swift */; };
 		36D2768F2938405900064AF0 /* PrivateBankerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */; };
 		36D276912938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */; };
+		36EFD8A129384BD500044CC4 /* EditGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A029384BD500044CC4 /* EditGame.swift */; };
+		36EFD8A329384DB100044CC4 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A229384DB100044CC4 /* GameModel.swift */; };
+		36EFD8A5293860F000044CC4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A4293860F000044CC4 /* HomeView.swift */; };
+		36EFD8AA293863D000044CC4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 36EFD8A9293863D000044CC4 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36127708293868F80061CBB5 /* BankerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BankerKit; sourceTree = "<group>"; };
 		36D2766A2938405000064AF0 /* PrivateBanker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateBanker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D2766D2938405000064AF0 /* PrivateBankerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerApp.swift; sourceTree = "<group>"; };
 		36D2766F2938405000064AF0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -49,6 +54,10 @@
 		36D2768A2938405900064AF0 /* PrivateBankerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateBankerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITests.swift; sourceTree = "<group>"; };
 		36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		36EFD8A029384BD500044CC4 /* EditGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGame.swift; sourceTree = "<group>"; };
+		36EFD8A229384DB100044CC4 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		36EFD8A4293860F000044CC4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		36EFD8A9293863D000044CC4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +88,9 @@
 		36D276612938405000064AF0 = {
 			isa = PBXGroup;
 			children = (
-				36D2766C2938405000064AF0 /* PrivateBanker */,
+				36EFD8A9293863D000044CC4 /* .swiftlint.yml */,
+				36D2766C2938405000064AF0 /* App */,
+				36127708293868F80061CBB5 /* BankerKit */,
 				36D276832938405900064AF0 /* PrivateBankerTests */,
 				36D2768D2938405900064AF0 /* PrivateBankerUITests */,
 				36D2766B2938405000064AF0 /* Products */,
@@ -96,9 +107,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		36D2766C2938405000064AF0 /* PrivateBanker */ = {
+		36D2766C2938405000064AF0 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				36EFD89F29384BBB00044CC4 /* Views */,
+				36D2769D2938414700064AF0 /* Models */,
 				36D2766D2938405000064AF0 /* PrivateBankerApp.swift */,
 				36D2766F2938405000064AF0 /* Persistence.swift */,
 				36D276742938405000064AF0 /* ContentView.swift */,
@@ -107,7 +120,7 @@
 				36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */,
 				36D276792938405800064AF0 /* Preview Content */,
 			);
-			path = PrivateBanker;
+			path = App;
 			sourceTree = "<group>";
 		};
 		36D276792938405800064AF0 /* Preview Content */ = {
@@ -135,6 +148,23 @@
 			path = PrivateBankerUITests;
 			sourceTree = "<group>";
 		};
+		36D2769D2938414700064AF0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				36EFD8A229384DB100044CC4 /* GameModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		36EFD89F29384BBB00044CC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				36EFD8A029384BD500044CC4 /* EditGame.swift */,
+				36EFD8A4293860F000044CC4 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36D276942938405900064AF0 /* Build configuration list for PBXNativeTarget "PrivateBanker" */;
 			buildPhases = (
+				36EFD8A62938621F00044CC4 /* SwiftLint */,
 				36D276662938405000064AF0 /* Sources */,
 				36D276672938405000064AF0 /* Frameworks */,
 				36D276682938405000064AF0 /* Resources */,
@@ -239,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36EFD8AA293863D000044CC4 /* .swiftlint.yml in Resources */,
 				36D2767B2938405800064AF0 /* Preview Assets.xcassets in Resources */,
 				36D276772938405800064AF0 /* Assets.xcassets in Resources */,
 			);
@@ -260,15 +292,41 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36EFD8A62938621F00044CC4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint --fix && swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36D276662938405000064AF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				36D2766E2938405000064AF0 /* PrivateBankerApp.swift in Sources */,
+				36EFD8A5293860F000044CC4 /* HomeView.swift in Sources */,
+				36EFD8A129384BD500044CC4 /* EditGame.swift in Sources */,
 				36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */,
 				36D276752938405000064AF0 /* ContentView.swift in Sources */,
 				36D276702938405000064AF0 /* Persistence.swift in Sources */,
+				36EFD8A329384DB100044CC4 /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +477,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PrivateBanker/PrivateBanker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/PrivateBanker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PrivateBanker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = A6V68BVP7Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -457,10 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = PrivateBanker/PrivateBanker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = App/PrivateBanker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"PrivateBanker/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"App/Preview Content\"";
 				DEVELOPMENT_TEAM = A6V68BVP7Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
