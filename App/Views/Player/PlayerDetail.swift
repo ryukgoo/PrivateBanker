@@ -10,12 +10,31 @@ import BankerKit
 
 struct PlayerDetail: View {
     var player: Player
+
     var body: some View {
-        VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Text(player.name)
-                .font(.title)
+        ScrollView {
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(player.name)
+                        .font(.title)
+                    Spacer()
+                }
+                .padding()
+            }
+
+            Divider()
+
+            Form {
+                Section {
+                    LabeledContent("Buy In") {
+//                        TextField("Buy In", text: player.name)
+                    }
+                } header: {
+                    Text("Status")
+                }
+            }
         }
+        .padding()
     }
 }
 
