@@ -6,20 +6,42 @@
 //
 
 import SwiftUI
+import BankerKit
 
 struct HomeView: View {
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false) {
+//        ScrollView(.vertical, showsIndicators: false) {
+//            VStack(alignment: .leading) {
+//                Text("Welcome back!!")
+//                    .font(.title2)
+//                Text("gg")
+//                    .font(.title)
+//            }
+//            .frame(maxWidth: .infinity, alignment: .leading)
+//            .padding(.vertical)
+//            .padding(.horizontal)
+//        }
+        VStack {
             VStack(alignment: .leading) {
                 Text("Welcome back!!")
                     .font(.title2)
                 Text("gg")
                     .font(.title)
+                List {
+                    ForEach(Player.samples) { player in
+                        NavigationLink {
+                            PlayerDetail(player: player)
+                        } label: {
+                            PlayerRow(player: player)
+                        }
+                    }
+                }
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(.vertical)
             .padding(.horizontal)
         }
+        .frame(maxHeight: .infinity)
         .overlay(alignment: .bottom) {
             Button {
                 // action

@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct EditGame: View {
+struct GameEditView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct EditGame_Previews: PreviewProvider {
+struct GameEditView_Previews: PreviewProvider {
     static var previews: some View {
-        EditGame()
+        GameEditView()
     }
 }

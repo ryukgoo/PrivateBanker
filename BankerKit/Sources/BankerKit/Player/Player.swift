@@ -13,9 +13,19 @@ public struct Player: Identifiable, Codable {
     public var name: String
     public var buyIn: Int = 0
     public var withdraw: Int = 0
+    public var remains: Int = 0
 
-    init(name: String) {
+    init(name: String, buyIn: Int = 0) {
         self.name = name
+        self.buyIn = buyIn
+    }
+
+    var total: Int {
+        return buyIn + remains
+    }
+
+    var payback: Int {
+        return (total / 2) - withdraw
     }
 
     mutating func rebuy(_ money: Int) throws {
@@ -24,7 +34,7 @@ public struct Player: Identifiable, Codable {
         self.buyIn += money
     }
 
-    mutating func editAmount(_ money: Int) throws {
+    mutating func editBuyIn(_ money: Int) throws {
         guard self.buyIn + money > 0
         else { throw BankerError.notEnoughBudget }
         self.buyIn += money
@@ -33,15 +43,15 @@ public struct Player: Identifiable, Codable {
 
 public extension Player {
     static let samples = [
-        Player(name: "Player0"),
-        Player(name: "Player1"),
-        Player(name: "Player2"),
-        Player(name: "Player3"),
-        Player(name: "Player4"),
-        Player(name: "Player5"),
-        Player(name: "Player6"),
-        Player(name: "Player7"),
-        Player(name: "Player8"),
-        Player(name: "Player9")
+        Player(name: "Player0", buyIn: 100000),
+        Player(name: "Player1", buyIn: 100000),
+        Player(name: "Player2", buyIn: 100000),
+        Player(name: "Player3", buyIn: 100000),
+        Player(name: "Player4", buyIn: 100000),
+        Player(name: "Player5", buyIn: 100000),
+        Player(name: "Player6", buyIn: 100000),
+        Player(name: "Player7", buyIn: 100000),
+        Player(name: "Player8", buyIn: 100000),
+        Player(name: "Player9", buyIn: 100000)
     ]
 }

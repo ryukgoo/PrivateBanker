@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3609E6D42939DC6F004BB029 /* PlayerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609E6D32939DC6F004BB029 /* PlayerRow.swift */; };
+		3609E6D72939DD44004BB029 /* BankerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3609E6D62939DD44004BB029 /* BankerKit */; };
+		3609E6D92939DF3A004BB029 /* PlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3609E6D82939DF3A004BB029 /* PlayerDetail.swift */; };
 		36D2766E2938405000064AF0 /* PrivateBankerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2766D2938405000064AF0 /* PrivateBankerApp.swift */; };
 		36D276702938405000064AF0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2766F2938405000064AF0 /* Persistence.swift */; };
 		36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */; };
@@ -16,7 +19,7 @@
 		36D276852938405900064AF0 /* PrivateBankerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276842938405900064AF0 /* PrivateBankerTests.swift */; };
 		36D2768F2938405900064AF0 /* PrivateBankerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */; };
 		36D276912938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */; };
-		36EFD8A129384BD500044CC4 /* EditGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A029384BD500044CC4 /* EditGame.swift */; };
+		36EFD8A129384BD500044CC4 /* GameEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A029384BD500044CC4 /* GameEditView.swift */; };
 		36EFD8A5293860F000044CC4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36EFD8A4293860F000044CC4 /* HomeView.swift */; };
 		36EFD8AA293863D000044CC4 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 36EFD8A9293863D000044CC4 /* .swiftlint.yml */; };
 /* End PBXBuildFile section */
@@ -39,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3609E6D32939DC6F004BB029 /* PlayerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRow.swift; sourceTree = "<group>"; };
+		3609E6D82939DF3A004BB029 /* PlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetail.swift; sourceTree = "<group>"; };
 		36127708293868F80061CBB5 /* BankerKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BankerKit; sourceTree = "<group>"; };
 		36D2766A2938405000064AF0 /* PrivateBanker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrivateBanker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D2766D2938405000064AF0 /* PrivateBankerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerApp.swift; sourceTree = "<group>"; };
@@ -53,7 +58,7 @@
 		36D2768A2938405900064AF0 /* PrivateBankerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivateBankerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36D2768E2938405900064AF0 /* PrivateBankerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITests.swift; sourceTree = "<group>"; };
 		36D276902938405900064AF0 /* PrivateBankerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateBankerUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		36EFD8A029384BD500044CC4 /* EditGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGame.swift; sourceTree = "<group>"; };
+		36EFD8A029384BD500044CC4 /* GameEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEditView.swift; sourceTree = "<group>"; };
 		36EFD8A4293860F000044CC4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		36EFD8A9293863D000044CC4 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3609E6D72939DD44004BB029 /* BankerKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3609E6D12939DAF8004BB029 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				3609E6D32939DC6F004BB029 /* PlayerRow.swift */,
+				3609E6D82939DF3A004BB029 /* PlayerDetail.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		3609E6D22939DAFF004BB029 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				36EFD8A029384BD500044CC4 /* GameEditView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		3609E6D52939DD44004BB029 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36D276612938405000064AF0 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +122,7 @@
 				36D276832938405900064AF0 /* PrivateBankerTests */,
 				36D2768D2938405900064AF0 /* PrivateBankerUITests */,
 				36D2766B2938405000064AF0 /* Products */,
+				3609E6D52939DD44004BB029 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +187,8 @@
 		36EFD89F29384BBB00044CC4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				36EFD8A029384BD500044CC4 /* EditGame.swift */,
+				3609E6D22939DAFF004BB029 /* Game */,
+				3609E6D12939DAF8004BB029 /* Player */,
 				36EFD8A4293860F000044CC4 /* HomeView.swift */,
 			);
 			path = Views;
@@ -179,6 +211,9 @@
 			dependencies = (
 			);
 			name = PrivateBanker;
+			packageProductDependencies = (
+				3609E6D62939DD44004BB029 /* BankerKit */,
+			);
 			productName = PrivateBanker;
 			productReference = 36D2766A2938405000064AF0 /* PrivateBanker.app */;
 			productType = "com.apple.product-type.application";
@@ -319,8 +354,10 @@
 			files = (
 				36D2766E2938405000064AF0 /* PrivateBankerApp.swift in Sources */,
 				36EFD8A5293860F000044CC4 /* HomeView.swift in Sources */,
-				36EFD8A129384BD500044CC4 /* EditGame.swift in Sources */,
+				3609E6D42939DC6F004BB029 /* PlayerRow.swift in Sources */,
+				36EFD8A129384BD500044CC4 /* GameEditView.swift in Sources */,
 				36D276732938405000064AF0 /* PrivateBanker.xcdatamodeld in Sources */,
+				3609E6D92939DF3A004BB029 /* PlayerDetail.swift in Sources */,
 				36D276752938405000064AF0 /* ContentView.swift in Sources */,
 				36D276702938405000064AF0 /* Persistence.swift in Sources */,
 			);
@@ -674,6 +711,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3609E6D62939DD44004BB029 /* BankerKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BankerKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		36D276712938405000064AF0 /* PrivateBanker.xcdatamodeld */ = {
